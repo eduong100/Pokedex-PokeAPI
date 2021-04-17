@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div className='App'>
         <Route exact path="/pokedex" component={Login} />
-        <Route path="/pokedex/hegister" component={Register} />
+        <Route path="/pokedex/register" component={Register} />
         <Route path="/pokedex/home" component={Home} />
       </div>
     )
