@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import NavBar from './NavBar'
 import Dashboard from './Dashboard'
-import Search from './Search'
+import Search from '../service/Search'
 import axios from 'axios'
 import Pagination from '../service/Pagination'
 import PokemonCard from '../pokemon/PokemonCard'
@@ -46,6 +46,7 @@ export default function Home() {
                             />
                         </div>
                     ) : null}
+                    <h6>Current Page: {currentPage}</h6>
                     <Dashboard currentPage={currentPage} postsPerPage={postsPerPage} 
                         totalPokemon={totalPokemon} togglePopup={togglePopup} 
                     /> 

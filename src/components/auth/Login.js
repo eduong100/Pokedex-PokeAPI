@@ -18,8 +18,8 @@ export default class Login extends Component {
                     <input type="password" className="form-control" placeholder="Enter password" />
                 </div>
 
-                <Link to='/Home'><button>Login</button></Link>
-                <Link to='/Register'><button>No Account?</button></Link>
+                <Link to='/pokedex/home'><button>Login</button></Link>
+                <Link to='/pokedex/register'><button>No Account?</button></Link>
             </form>
         );
     }

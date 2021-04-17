@@ -9,7 +9,7 @@ export default class NavBar extends Component {
                     <a className="navbar-brand col-sm-3 col-md-2 mr-0 align-items-center">Pokedex</a>
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                            <Link to='/'><button>Logout</button></Link>
+                            <Link to='/pokedex'><button>Logout</button></Link>
                         </li>
                     </ul>
                 </nav>

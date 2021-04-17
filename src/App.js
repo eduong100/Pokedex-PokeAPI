@@ -11,9 +11,9 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <Route exact path="/" component={Login} />
-        <Route path="/Register" component={Register} />
-        <Route path="/Home" component={Home} />
+        <Route exact path="/pokedex" component={Login} />
+        <Route path="/pokedex/hegister" component={Register} />
+        <Route path="/pokedex/home" component={Home} />
       </div>
     )
   }
