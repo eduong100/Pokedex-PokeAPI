@@ -24,7 +24,7 @@ SECRET_KEY = 'django-insecure-3)u-d50m5h05va$-=w5cz&8tdogk0kw=(n$h22xcp7+x%!&r95
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['eduong100-pokedex-backend.herokuapp.com']
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
