@@ -1,3 +1,13 @@
+# Running the locally hosted backend
+
+Make sure to have python3, pip, and pipenv installed
+1. Navigate into pokedex/backend
+2. Enter virtual environment: $ pipenv shell
+3. Install dependencies: $ pipenv install
+4. Start the backend: $ python pokedex_backend/manage.py startserver
+5. The api should be hosted on localhost:3000
+6. At https://eduong100.github.io/pokedex/  verify that you can login with test as username and test as password
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
