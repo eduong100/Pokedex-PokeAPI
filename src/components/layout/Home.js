@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
+import {Redirect} from 'react-router-dom'
 import NavBar from './NavBar'
 import Dashboard from './Dashboard'
 import Search from '../service/Search'
@@ -7,7 +8,7 @@ import Pagination from '../service/Pagination'
 import PokemonCard from '../pokemon/PokemonCard'
 import DisplayStats from './DisplayStats'
 
-export default function Home() {
+export default function Home( {isLoggedIn} ) {
     const [pokemon, setPokemon] = React.useState(null);
     const [currentPage, setCurrentPage] = useState(1);
     const [postsPerPage, ] = useState(40);
@@ -30,7 +31,12 @@ export default function Home() {
     const togglePopup = (id) => {
         setIsOpen(!popupIsOpen)
         setID(id)
-    }   
+    }  
+    if(!isLoggedIn) {
+        return(
+            <Redirect to='/pokedex' />
+        )
+    } 
     return (
         <React.Fragment>
             <NavBar /> 
