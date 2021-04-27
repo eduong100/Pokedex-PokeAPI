@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, Redirect } from 'react-router-dom';
 import axios from 'axios';
-import {Button, Col} from 'react-bootstrap';
+import {Button} from 'react-bootstrap';
 
 export default function Login( {logUser} ) {
     const [email, setEmail] = React.useState('')
